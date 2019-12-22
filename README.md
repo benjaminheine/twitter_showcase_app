@@ -1,4 +1,4 @@
-<!--- [](https://github.com/benjaminheine/Expense_Tracker/blob/master/images/financialReport.png) --->!
+<!--- [](https://github.com/benjaminheine/Expense_Tracker/blob/master/images/financialReport.png) --->
 # Twitter Showcase App
 
 
@@ -14,5 +14,5 @@ It handles with html, bootstrap and java script, react and css.
 1. In the root directory, run `npm i`
 2. In the root directory, run `npm run start`
 
-## Deliverables
+<!---## Deliverables--->
 
