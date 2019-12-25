@@ -1,82 +1,76 @@
-import React from 'react';
-import {Card} from 'react-bootstrap'; 
-import {CardGroup} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
-import CardDeck from 'react-bootstrap/CardDeck'
-import {Link} from 'react-router-dom';
-import './Home.css'
+import React from "react";
+// import {Card} from 'react-bootstrap';
+// import {CardGroup} from 'react-bootstrap';
+// import {Button} from 'react-bootstrap';
+//import CardDeck from 'react-bootstrap/CardDeck'
+import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
+import "./Home.css";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
 class Home extends React.Component {
-  render(){
+  render() {
     return (
-      <div  >
-  <h1 className="text-center">Get everything out of twitter</h1>
-  {/* <CardGroup> */}
-  {/* <Card className="text-center" style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Search your twitteruser or a certain tweet</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Link to="/userSearch"><Button variant="primary">User Search</Button></Link>
-  </Card.Body>
-</Card> */}
-<CardDeck>
+      <div>
+        <h1 className="text-center">Get everything out of twitter</h1>
 
-
-
-<Card className="text-center" bg="light" style={{ width: '18rem' }}>
-    
-    <Card.Body>
-      <Card.Title>Search</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-      <Link to="/userSearch"><Button variant="primary">User Search</Button></Link>
-    </Card.Body>
-  </Card>
-
-
-
-<Card className="text-center" bg="light" style={{ width: '18rem' }}>
-    
-    <Card.Body>
-      <Card.Title>Get random</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-      <Link to="/randomTweetShowcase"><Button variant="primary">Random Tweet Showcase</Button></Link>
-    </Card.Body>
-  </Card>
-
-
-
-
-</CardDeck>
-
-
-{/* <Card className="text-center" style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Link to="/randomTweetShowcase"><Button variant="primary">Random Tweet Showcase</Button></Link>
-  </Card.Body>
-</Card> */}
-
-  {/* </CardGroup> */}
-  
+        <Container>
+          <Row>
+            <Col xs="6">
+              <Card>
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/318x180.svg"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle>Search</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </CardText>
+                  <Link to="/userSearch">
+                    <Button variant="primary">User Search</Button>
+                  </Link>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs="6">
+              <Card>
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/318x180.svg"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle>Get random</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </CardText>
+                  <Link to="/randomTweetShowcase">
+                    <Button variant="primary">Random Tweet Showcase</Button>
+                  </Link>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
- }
+}
 
 export default Home;
-
